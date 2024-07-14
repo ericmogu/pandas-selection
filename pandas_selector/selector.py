@@ -1,4 +1,4 @@
-import pandas as py
+import pandas as pd
 import os
 import chardet  
 
@@ -16,3 +16,6 @@ def detect_encoding(file_path):
 
 encoding = detect_encoding(file) 
 print(f'The encoding of the file is: {encoding}') 
+
+df = pd.read_csv(file, na_filter=False, sep=';', encoding= 'ISO-8859-1')
+print(df)

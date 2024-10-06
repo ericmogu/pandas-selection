@@ -20,7 +20,7 @@ import openpyxl
 from openpyxl.utils import get_column_letter
 
 
-file = r"C:/Users/ericm/Documents/Python/pandas-selection/pandas_selector/file.csv"
+file = r"file.csv"
 def detect_encoding(file_path): 
     with open(file_path, 'rb') as file: 
         detector = chardet.universaldetector.UniversalDetector() 
